@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon-pokeball.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container-pokedex">
+      <div class="container-info-1">
+        <article class="buttons-top">
+          <div class="button-main">
+            <div class="buttom-blue"></div>
+            <div class="buttom-cyan"></div>
+            <div class="buttom-celeste"></div>
+          </div>
+          <div class="sub-butttoms">
+            <div class="mini-buttom-green"></div>
+            <div class="mini-buttom-yellow"></div>
+            <div class="mini-buttom-blue"></div>
+          </div>
+        </article>
+        <article class="info-left">
+          <img
+            src="assets/Pokebola-pokeball.png"
+            alt="Pokemon"
+            id="pokeImg"
+            width="150px"
+          />
+          <input
+            type="text"
+            placeholder="Pokemon"
+            id="pokeName"
+            name="pokeName"
+          />
+          <button class="shearch-pokemon" onclick="fetchPokemon()">
+            Buscar Pokemon
+          </button>
+          <div class="conatiner-buttoms-longs">
+            <div class="buttom-large-1"></div>
+            <div class="buttom-large-2"></div>
+          </div>
+          <div class="conatiner-butoms-left">
+            <div class="buttom-round"></div>
+            <div class="buttom-cruise">
+              <div class="horizontal-cruise"></div>
+              <div class="vertical-cruise"></div>
+            </div>
+          </div>
+          <h1>Pokedex - By Maickol</h1>
+        </article>
+      </div>
+      <div class="container-info-2">
+        <article class="info-right">
+          <img src="assets/logo-pokedex.png" alt="Logo pokedex" />
+          <div class="skills-info">
+            <div id="abilities" class="abilities"></div>
+            <div id="typePokemon" class="typePokemon"></div>
+            <div id="id" class="id"></div>
+          </div>
+          <div class="section-blue">
+            <div id="nombre" class="name-pokemon"></div>
+          </div>
+          <div class="buttoms-longs-rigth">
+            <div class="buttom-large-gray"></div>
+            <div class="buttom-large-gray"></div>
+          </div>
+          <div class="buttoms-white-yellow">
+            <div class="bottoms-white">
+              <div class="bottoms-white-1"></div>
+              <a
+                href="https://github.com/Maickol304"
+                class="bottoms-white-2"
+                target="_blank"
+              >
+                <img src="assets/icon-github.png" alt="logo de github"
+              /></a>
+            </div>
+            <div class="buttom-yellow">
+              <div class="buttom-yellow-mini"></div>
+            </div>
+          </div>
+          <div class="height-weight">
+            <div class="height" id="heightPokemon"></div>
+            <div class="weight" id="weightPokemon"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="pokedex.js"></script>
+  </body>
+</html>
